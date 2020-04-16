@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 
 
-class HandleExcel:
+class Excel:
     def __init__(self, path=None):
         if path is None:
             self.path = "../case/base.xlsx"
@@ -24,7 +24,7 @@ class HandleExcel:
 
 
 if __name__ == "__main__":
-    handleExcel = HandleExcel()
+    handleExcel = Excel()
 
     # 行是从 1 开始的，但是又要去掉表头，所以从 2 开始
     for i in range(2, handleExcel.get_row_nums() + 1):
