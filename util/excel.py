@@ -1,10 +1,10 @@
 from openpyxl import load_workbook
-
+import os
 
 class Excel:
     def __init__(self, path=None):
         if path is None:
-            self.path = "../case/base.xlsx"
+            self.path = os.path.dirname(__file__) + "/../case/base.xlsx"
         self.instance = load_workbook(self.path)
 
     def get_target_sheet(self, index):
