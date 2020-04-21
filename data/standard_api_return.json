@@ -1,0 +1,14 @@
+{
+  "login": {
+    "success": {
+      "code": 0,
+      "message": "登陆成功",
+      "data": null
+    },
+    "fail": {
+      "code": -1,
+      "message": "登陆失败",
+      "data": null
+    }
+  }
+}
