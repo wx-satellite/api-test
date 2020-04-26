@@ -4,11 +4,13 @@ import json
 
 class BaseRequest:
 
-    def __send_post(self, url, data):
+    @classmethod
+    def __send_post(cls, url, data):
         res = requests.post(url=url, data=data).text
         return res
 
-    def __send_get(self, url, data):
+    @classmethod
+    def __send_get(cls, url, data):
         res = requests.get(url=url, params=data).text
         return res
 

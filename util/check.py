@@ -1,6 +1,6 @@
 from deepdiff import DeepDiff
 
-from util.read_data import ReadStandardApiReturn
+from util.file import ReadStandardApiReturn
 
 
 class CheckJson:
