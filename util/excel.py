@@ -21,7 +21,7 @@ class Excel:
         return row_values
 
     # 回写了值之后需要执行 save 方法
-    def set_cell_value_from_target_sheet(self, row_index, cell_index, value,target_index=0):
+    def set_cell_value_from_target_sheet(self, row_index, cell_index, value, target_index=0):
         # self.instance.active
         sheet = self.get_target_sheet(target_index)
         sheet.cell(row_index, cell_index, value)
@@ -43,4 +43,3 @@ if __name__ == "__main__":
     for i in range(2, handleExcel.get_row_nums() + 1):
         # 获取每一行的值
         print(handleExcel.get_row_value_from_target_sheet(i))
-
