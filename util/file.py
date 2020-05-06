@@ -36,6 +36,7 @@ class ReadStandardApiReturn:
         return self.data.get(url)
 
 
+# cookie 或者 token 等等登陆状态
 class ReadOrWriteLoginStatus:
     base_path = os.path.dirname(__file__)
 
