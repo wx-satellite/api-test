@@ -1,14 +1,10 @@
 {
-  "login": {
-    "success": {
-      "code": 0,
-      "message": "登陆成功",
-      "data": null
-    },
-    "fail": {
-      "code": -1,
-      "message": "登陆失败",
-      "data": null
+  // 请求地址直接对应正确返回值
+  "api/login": {
+    "code": 0,
+    "message": "登陆成功",
+    "data": {
+      "token": "1212121212121"
     }
   }
 }

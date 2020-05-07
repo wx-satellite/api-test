@@ -1,0 +1,15 @@
+{
+  // 请求地址对应：错误返回值、正确返回值
+  "api/login": {
+    "success": {
+      "code": 0,
+      "message": "登陆成功",
+      "data": null
+    },
+    "fail": {
+      "code": -1,
+      "message": "登陆失败",
+      "data": null
+    }
+  }
+}
